@@ -1,5 +1,4 @@
-# MidasRWA BOT
-MidasRWA BOT
+# GoKite Ai 
 
 First Register On GoKite AI Here : [ Go Kite AI ](https://t.me/MidasRWA_bot/app?startapp=ref_f07b128d-5574-48aa-8241-d519ba5998a4)
 
