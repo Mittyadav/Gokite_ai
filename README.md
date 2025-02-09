@@ -13,7 +13,7 @@ Please Join Telegram Channel: [Crypto Satyam](https://t.me/CryptoSatyam1)
   - Randomized operations for a more natural simulation
   - No need to access your wallet ( it means your wallet is fully safe )
 
-## SCRIPT RUNNING PROCESS [1st & 2nd command below copy and paste one by one ]
+## SCRIPT RUNNING PROCESS [All commands below copy and paste one by one ]
 
 1. **clone our repo:**
    ```bash
@@ -33,6 +33,10 @@ Please Join Telegram Channel: [Crypto Satyam](https://t.me/CryptoSatyam1)
 ```bash
    node Satyam.js
    ```
+5.**After Start The Script:**
+- Enter Your Wallet Address ( Which You Have Used During Account Create )
+- Enter No Of Interactions Per Agent ( Means if You Enter 5 it means your total interaction will be 15 (3x5=15))
+
 **If You Are Happy With Our Scripys You You Can Donate Me Any Small Amount:**
 - EVM: 0x62628ac442ad90869324344Ec8F23Cd5AeE07ED3
 - SUI: 0x9f2563083f84a80fb75b9e86fdfb91a8630ceae45926b20e1d3c2752aa3694d7
