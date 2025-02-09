@@ -33,11 +33,12 @@ Please Join Telegram Channel: [Crypto Satyam](https://t.me/CryptoSatyam1)
 ```bash
    node Satyam.js
    ```
-5.**After Start The Script:**
+5.**(After Start The Script):**
 - Enter Your Wallet Address ( Which You Have Used During Account Create )
 - Enter No Of Interactions Per Agent ( Means if You Enter 5 it means your total interaction will be 15 (3x5=15))
 
-**If You Are Happy With Our Scripys You You Can Donate Me Any Small Amount:**
+**-[If You Are Happy With Our Scripts You You Can Donate Me Any Small Amount]:**
+
 - EVM: 0x62628ac442ad90869324344Ec8F23Cd5AeE07ED3
 - SUI: 0x9f2563083f84a80fb75b9e86fdfb91a8630ceae45926b20e1d3c2752aa3694d7
 - SOL: FarjpcjNU9CumTpRgFuwqWEchaS9cs8z86HLZbq2skpH
