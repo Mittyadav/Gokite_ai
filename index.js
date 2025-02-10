@@ -9,14 +9,14 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
-// Agent List
+// Agents List
 const agents = {
   "deployment_p5J9lz1Zxe7CYEoo0TZpRVay": "Professor 🧠",
   "deployment_7sZJSiCqCNDy9bBHTEh7dwd9": "Crypto Buddy 💰",
   "deployment_SoFftlsf9z4fyA3QCHYkaANq": "Sherlock 🔎"
 };
 
-// Display App Title in Style
+// Function to Display App Title in Style
 function displayAppTitle() {
   const title = figlet.textSync('SCRIPTHUB00', { horizontalLayout: 'full' });
   const gradientTitle = gradient.pastel.multiline(title);
@@ -32,20 +32,20 @@ function displayAppTitle() {
     boxen(boxContent, {
       padding: 1,
       margin: 1,
-      borderStyle: 'double',
+      borderStyle: 'round',
       borderColor: 'cyan',
     })
   );
 }
 
-// User Prompt to Select an Agent
+// Function to Let User Select an Agent
 function selectAgent() {
-  console.log(chalk.yellow('\nChoose an agent:'));
+  console.log(chalk.yellow('\n📌 Choose an agent:'));
   Object.keys(agents).forEach((key, index) => {
     console.log(`${chalk.cyan(`[${index + 1}]`)} ${agents[key]}`);
   });
 
-  readline.question(chalk.magenta('\nEnter the number of your choice: '), (choice) => {
+  readline.question(chalk.magenta('\n👉 Enter the number of your choice: '), (choice) => {
     const selectedAgent = Object.keys(agents)[choice - 1];
     if (selectedAgent) {
       console.log(chalk.green(`\n✅ You selected: ${agents[selectedAgent]}\n`));
@@ -60,7 +60,6 @@ function selectAgent() {
 // Run the App
 displayAppTitle();
 selectAgent();
-
 
 async function sendRandomQuestion(agent) {
   try {
