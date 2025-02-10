@@ -1,24 +1,43 @@
-const axios = require('axios');
+require('axios');
 const fs = require('fs');
 const figlet = require('figlet');
 const chalk = require('chalk');
+const gradient = require('gradient-string');
+const boxen = require('boxen');
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
+// Agent List
 const agents = {
   "deployment_p5J9lz1Zxe7CYEoo0TZpRVay": "Professor 🧠",
   "deployment_7sZJSiCqCNDy9bBHTEh7dwd9": "Crypto Buddy 💰",
   "deployment_SoFftlsf9z4fyA3QCHYkaANq": "Sherlock 🔎"
 };
 
+// Display App Title in Style
 function displayAppTitle() {
-  console.log(chalk.cyan(figlet.textSync(' CRYPTO SATYAM ', { horizontalLayout: 'full' })));
-  console.log(chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'));
-  console.log(chalk.gray('By SATYAM Join Tg - https://t.me/CryptoSatyam1'));
-  console.log(chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'));
+  const title = figlet.textSync('SCRIPTHUB00', { horizontalLayout: 'full' });
+  const gradientTitle = gradient.pastel.multiline(title);
+
+  const boxContent = `
+  ${gradientTitle}
+  ${chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
+  ${chalk.gray('By DARK LIFE 🧬 Join TG -')} ${chalk.cyan('https://t.me/SCRIPTHUB00')}
+  ${chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')}
+  `;
+
+  console.log(
+    boxen(boxContent, {
+      padding: 1,
+      margin: 1,
+      borderStyle: 'double',
+      borderColor: 'cyan',
+    })
+  );
 }
+
 
 async function sendRandomQuestion(agent) {
   try {
@@ -85,7 +104,7 @@ async function main() {
         console.log(chalk.dim('----------------------------------------'));
       }
 
-      console.log('\n ThnakYou For Using Kite Ai Auto Script Please Join TG @CryptoSatyam1.');
+      console.log('\n ThnakYou For Using Kite Ai Auto Script Please Join TG @scripthub00.');
       readline.close();
     });
   });
