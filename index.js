@@ -1,4 +1,4 @@
-require('axios');
+const axios = require('axios');
 const fs = require('fs');
 const figlet = require('figlet');
 const chalk = require('chalk');
@@ -37,6 +37,29 @@ function displayAppTitle() {
     })
   );
 }
+
+// User Prompt to Select an Agent
+function selectAgent() {
+  console.log(chalk.yellow('\nChoose an agent:'));
+  Object.keys(agents).forEach((key, index) => {
+    console.log(`${chalk.cyan(`[${index + 1}]`)} ${agents[key]}`);
+  });
+
+  readline.question(chalk.magenta('\nEnter the number of your choice: '), (choice) => {
+    const selectedAgent = Object.keys(agents)[choice - 1];
+    if (selectedAgent) {
+      console.log(chalk.green(`\n✅ You selected: ${agents[selectedAgent]}\n`));
+    } else {
+      console.log(chalk.red('\n❌ Invalid selection! Please try again.\n'));
+      selectAgent();
+    }
+    readline.close();
+  });
+}
+
+// Run the App
+displayAppTitle();
+selectAgent();
 
 
 async function sendRandomQuestion(agent) {
