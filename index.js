@@ -14,9 +14,9 @@ const agents = {
 };
 
 function displayAppTitle() {
-  console.log(chalk.cyan(figlet.textSync(' CRYPTO SATYAM ', { horizontalLayout: 'full' })));
+  console.log(chalk.cyan(figlet.textSync(' DARK LIFE ', { horizontalLayout: 'full' })));
   console.log(chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'));
-  console.log(chalk.gray('By SATYAM Join Tg - https://t.me/CryptoSatyam1'));
+  console.log(chalk.gray('By SATYAM Join Tg - https://t.me/SCRIPTHUB00'));
   console.log(chalk.dim('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'));
 }
 
