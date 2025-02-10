@@ -70,7 +70,7 @@ async function main() {
         console.log(chalk.dim('----------------------------------------'));
 
         for (let i = 0; i < iterations; i++) {
-          console.log(chalk.yellow(`🔄 Iterasi ke-${i + 1}`));
+          console.log(chalk.yellow(`🔄 Iteration-${i + 1}`));
           const nanya = await sendRandomQuestion(agentId);
           console.log(chalk.cyan('❓ Query:'), chalk.bold(nanya.question));
           console.log(chalk.green('💡 Answer:'), chalk.italic(nanya?.response?.content ?? ''));
